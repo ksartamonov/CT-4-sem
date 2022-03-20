@@ -1,3 +1,5 @@
+// Артамонов Кирилл
+
 #include <iostream>
 #include <vector>
 

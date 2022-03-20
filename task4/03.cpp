@@ -1,3 +1,5 @@
+// Артамонов Кирилл
+
 #include <iostream>
 
 using namespace std;
@@ -52,5 +54,5 @@ int main()
   m = new ElasticMaterial(100);
   cout << "Material stress is: " << m->getStress(0.1) << endl;
   m = new PlasticMaterial(100, 0.01);
-  cout << "Material stress is: " << m->getStress(0.1) << endl; 
+  cout << "Material stress is: " << m->getStress(0.1) << endl;
 }
