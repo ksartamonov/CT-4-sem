@@ -14,7 +14,7 @@ public:
       _size = n;
    }
 // Добавьте нужный деструктор
-   ~Storage() {
+   virtual ~Storage() {
       delete[] _arr;
    }
 // Получение размерности хранилища
