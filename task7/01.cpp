@@ -1,4 +1,5 @@
 // Артамонов Кирилл
+
 #include <iostream>
 #include <string>
 
