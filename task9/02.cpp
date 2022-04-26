@@ -1,3 +1,5 @@
+// Артамонов кирилл, Б01-005
+
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -10,16 +12,16 @@ struct student {
 };
 
 template<typename T>
-bool check_them(T& x, T& y, T& z) {
-    if (x.id_number_string == y.id_number_string && y.id_number_string == z.id_number_string)
-        return true;
-    return false;
+bool operator== (student &st1, student &st2){
+	if (st1.id_number_string == st2.id_number_string)
+		return true;
+	return false;
 }
 
 int main() {
     student a = {"Andy", "1234 123123"};
     student b = {"Andrew", "1234 123123"};
     student c = {"Andy", "1234123123"};
-    cout << boolalpha << "Check result is: " << check_them(a, b, c) << endl;
+    cout << boolalpha << "Check result is: " << check_them(a, b, c) << endl; // to compile add check_them() definition
     return 0;
 }

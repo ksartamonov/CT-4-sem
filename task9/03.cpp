@@ -1,3 +1,5 @@
+// Артамонов кирилл, Б01-005
+
 #include <iostream>
 #include <string>
 #include <algorithm>

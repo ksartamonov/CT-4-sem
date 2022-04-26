@@ -1,3 +1,5 @@
+// Артамонов кирилл, Б01-005
+
 #include <iostream>
 
 using namespace std;
@@ -58,12 +60,12 @@ template<int L, int M, int T>
 ostream& operator<<(ostream& os, const DimQ<L, M, T>& q) {
     os << q.value << " ";
 
-    if (L == 1 && T == -1) {
+    if (L == 1 && M == 0 && T == -1) {
         os << "m/s";
         return os;
     }
 
-    if (L == 1 && T == -2) {
+    if (L == 1 && M == 0 && T == -2) {
         os << "m/s^2";
         return os;
     }
