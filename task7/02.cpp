@@ -40,9 +40,9 @@ public:
 
 // Ещё один перегруженный оператор - неравенство векторов
 // Да, это отдельный оператор! Хинт - настоящие джедаи смогут для != использовать уже написанное ==
-bool operator!= (const Vector2D& v2) const {
-    return !(*this == v2);
-}
+   bool operator!= (const Vector2D& v2) const {
+      return !(*this == v2);
+   }
 
     // Сумма двух векторов, исходные вектора не меняются, возвращается новый вектор
     Vector2D operator+ (const Vector2D& v2) const {
